@@ -16,6 +16,7 @@ body{
     background: var(--cor-de-fundo);
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
+    min-width: 360px;
 }
 
 .cabecalho{
@@ -47,12 +48,12 @@ body{
     color: var(--cinza1);
 }
 
-.consultas{
+.consultas__dia{
     margin: 3rem auto;
     width: 92%;
 }
 
-.consultas__dia{
+.consultas__dia .dia{
     font-weight: 700;
     margin-bottom: 1rem;
     color: var(--cinza2);
@@ -158,4 +159,17 @@ body{
     background-color: var(--azul);
     color: var(--branco);
     border: 1px solid var(--azul);
+}
+
+@media screen and (min-width: 720px) {
+    .consultas{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(310px, auto));
+        gap: 1rem;
+    }
+
+    .cabecalho{
+        margin: 2rem auto;
+        width: 92%;
+    }
 }
