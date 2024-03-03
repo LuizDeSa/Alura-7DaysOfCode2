@@ -1,0 +1,94 @@
+.botoes__flutuante{
+    position: relative;
+}
+
+.botoes__flutuante .botao__cadastrar{
+    position: absolute;
+    right: 16px;
+    bottom: 70px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    filter: drop-shadow(0 3px 6px #4894FF90);
+    z-index: 5;
+}
+
+.botoes__flutuante .icone__mais{
+    position: absolute;
+    background-image: url('../img/Mais.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    transform: translate(-50%, -50%);
+}
+
+.botoes__flutuante .botoes__opcao{
+    position: absolute;
+    width: 100;
+    right: 0;
+    bottom: 0;
+    padding: 80vh 0 20px 0;
+    padding-bottom: 130px;
+    transition: .3s ease;
+    transform: scale(0);
+    transform-origin: 85% bottom;
+    background: radial-gradient(circle at bottom right, black, 20%, transparent);
+    z-index: 2;
+}
+
+.botoes__flutuante > .botao__cadastrar:focus + ul.botoes__opcao{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.botoes__flutuante > .botoes__opcao li{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 16px;
+    margin-bottom: 8px;
+}
+
+.botoes__flutuante > .botoes__opcao li>span{
+    display: flex;
+    align-items: center;
+    height: 24px;
+    font-size: 12;
+    background: var(--branco);
+    border-radius: 20px;
+    padding: 0 8px;
+    margin-right: 4px;
+}
+
+.botoes__flutuante-item{
+    display: flex;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    position: relative;
+    filter: drop-shadow(0 3px 6px #4894FF90);
+}
+
+.botoes__flutuante-item span{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 2px;
+    /* left: 50%;  */
+    transform: translate(50%, 50%);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.botoes__flutuante-item .icone__local{
+    background-image: url(../img/pinfabiconee.png);
+    background-size: 20px;
+
+}
+
+.botoes__flutuante-item .icone__video{
+    background-image: url(../img/Camerafab.png);
+    background-size: 24px;
+}
+
