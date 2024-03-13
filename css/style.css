@@ -35,6 +35,9 @@ body{
     border: none;
 }
 
+.main{
+    margin: 2rem 0rem 0rem 1rem;
+}
 
 @media screen and (min-width: 720px) {
     .consultas{
